@@ -170,6 +170,8 @@ void ZydisValidateEnumRanges(const ZydisDecodedInstruction* insn,
             ZYDIS_CHECK_ENUM(op->imm.is_signed, ZYAN_TRUE);
             ZYDIS_CHECK_ENUM(op->imm.is_relative, ZYAN_TRUE);
             break;
+        default:
+            break;
         }
     }
 
